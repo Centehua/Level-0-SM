@@ -17,7 +17,7 @@ public class TortoiseColorChooser {
 		if (answer.equals("pink")) {
 			Tortoise.setPenColor(Color.PINK);
 		}
-		if()
+
 		// 5. if the user doesn’t enter anything, choose a random color
 
 		// 6. put a loop around your code so that you keep asking the user for more colors & drawing them
