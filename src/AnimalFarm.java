@@ -27,12 +27,10 @@ public class AnimalFarm {
 	} 
 	else if(useranswer.equals("cow")){
 		
-		playMoo(); 
-		
+		playMoo(); 	
 	}
 	else if(useranswer.equals("duck")){
 		playQuack(); 
-		
 	} 
 	else if(useranswer.equals("cat")){
 		playMeow(); 	
@@ -67,7 +65,7 @@ public class AnimalFarm {
 	
 	
 	/* Ignore this stuff */
-	  String quackFile = "/Users/League/Google Drive/league-sounds/quack.wav";
+	String quackFile = "/Users/League/Google Drive/league-sounds/quack.wav";
 	String mooFile = "/Users/League/Google Drive/league-sounds/moo.wav";
 	String woofFile = "/Users/League/Google Drive/league-sounds/woof.wav";
 	String meowFile = "/Users/League/Google Drive/league-sounds/meow.wav";
@@ -85,7 +83,8 @@ public class AnimalFarm {
    		 Thread.sleep(3400);
     	} catch (Exception ex) {
         	ex.printStackTrace();
-    	}
+        } 
+    
 	}
 
 	public static void main(String[] args) {

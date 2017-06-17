@@ -1,3 +1,4 @@
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /*
@@ -7,44 +8,55 @@ import javax.swing.JOptionPane;
  */
 public class XGeeks {
 public static void main(String[] args) {
-
+             
+        
+        for (int i = 0; i < 10; i++) { 
+	
 		// 1. Save the superpower for each person in a variable.
                 String Izuku = "Izuku's quirk is One For All";
-                String Todoroki = "Todoroki's quirk is Half-Cold Half-Hot";
-                String Bakugo = "Bakugo's quirk is Explosion";
-                String Ochako ="Ochako's quirk is Zero Gravity" ; 
+                String Shoto = "Shoto's quirk is Half-Cold Half-Hot";
+                String Katsuki = "Bakugo's quirk is Explosion";
+                String Ochaco ="Ochaco's quirk is Zero Gravity" ; 
                 String Mina = "Mina's quirk is Acid";
-	
-	
-	
-		// 2. Ask the user to enter a name. Store their answer in a variable.
-                String answer = JOptionPane.showInputDialog("What superhero do you want?");
-             
+                
+           	// 2. Ask the user to enter a name. Store their answer in a variable.
+                String answer = JOptionPane.showInputDialog("What superhero do you want?" 
+                +"  "+ "Pick from the following:" +"  "+ "Izuku"+ " "+ "Shoto"
+                + " " + "Bakugo"+" "+ "Ochako"+ " "+ "Mina"); 
+            
 	
     // 3. Show the superpower in a pop-up, depending on the name entered.
+    
     //6/1/17 Update: I changed the string to a case 
-    switch (answer) {
+    
+        switch (answer) {
+        default:
+            JOptionPane.showMessageDialog(null,"Please pick another My Hero Academia character."
+            + "  " + "Also please write the character's name in capitals (only first letter)." );
+            break;
         case "Izuku":
-            JOptionPane.showMessageDialog(null,Izuku);
+            ImageIcon c = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Izuku Midoriya.png");
+           JOptionPane.showMessageDialog(null,Izuku,"Izuku Midoriya", JOptionPane.PLAIN_MESSAGE,c);
             break;
-        case "Todoroki":
-            JOptionPane.showMessageDialog(null,Todoroki);
+        case "Shoto" :
+            ImageIcon d = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Shoto Todoroki.png");
+           JOptionPane.showMessageDialog(null,Shoto,"Shoto Todoroki", JOptionPane.PLAIN_MESSAGE,d);
             break;
-        case "Bakugo":
-            JOptionPane.showMessageDialog(null,Bakugo);
+        case "Katsuki":
+            ImageIcon e = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Katsuki Bakugo.png");
+           JOptionPane.showMessageDialog(null,Katsuki,"Katsuki Bakugo", JOptionPane.PLAIN_MESSAGE,e);
             break;
-        case "Ochako":
-            JOptionPane.showMessageDialog(null,Ochako);
+        case "Ochaco":
+            ImageIcon a = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Ochaco Uraraka.png");
+           JOptionPane.showMessageDialog(null,Ochaco,"Ochako Uraraka", JOptionPane.PLAIN_MESSAGE,a);
             break;
         case "Mina":
-            JOptionPane.showMessageDialog(null,Mina);
+           ImageIcon b = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Mina Ashido.png");
+           JOptionPane.showMessageDialog(null,Mina,"Mina Ashido", JOptionPane.PLAIN_MESSAGE,b);
+        }
             break;
-        default:
-            JOptionPane.showMessageDialog(null,"Please pick another My Hero Academia character");
-            break;
-    }		
+       
+             }			
 				
-				
-            }
-    }
-
+        }
+        } 
