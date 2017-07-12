@@ -25,14 +25,16 @@ public static void main(String[] args){
            	// 2. Ask the user to enter a name. Store their answer in a variable.
                 String answer = JOptionPane.showInputDialog("What superhero do you want?" 
                 +"  "+ "Pick from the following:" +"  "+ "Izuku"+ " "+ "Shoto"
-                + " " + "Bakugo"+" "+ "Ochaco"+ " "+ "Mina"); 
+                + " " + "Katsuki"+" "+ "Ochaco"+ " "+ "Mina"); 
             
 	
     // 3. Show the superpower in a pop-up, depending on the name entered.
     
     //6/1/17 Update: I changed the string to a case 
+   
     
-     switch (answer) {
+  
+  switch (answer) {
         default:
             JOptionPane.showMessageDialog(null,"Please pick another My Hero Academia character."
             + "  " + "Also please write the character's name in capitals (only first letter)." );
@@ -56,11 +58,7 @@ public static void main(String[] args){
         case "Mina":
            ImageIcon b = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Mina Ashido.png");
            JOptionPane.showMessageDialog(null,Mina,"Mina Ashido", JOptionPane.PLAIN_MESSAGE,b);
-           break;
-        }
-        
-    } 
-             		
-				
+           break; }  
+    }        					
        }
         } 
