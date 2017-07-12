@@ -1,7 +1,10 @@
 import java.awt.Color;
+import java.util.logging.ErrorManager;
+import javafx.scene.paint.Stop;
 
 
 import javax.swing.JOptionPane;
+import javax.xml.bind.annotation.XmlElement;
 
 import org.teachingextensions.logo.Tortoise;
 
@@ -22,7 +25,7 @@ public class TortoiseColorChooser {
                 if(answer.equals("pink")){
                 
                 Tortoise.setPenColor(Color.pink);
-                
+                 
                 } 
                
       
@@ -34,9 +37,11 @@ public class TortoiseColorChooser {
              
              
 		// 5. if the user doesn’t enter anything, choose a random color
-                if(answer.equals(""))  {
+                else  {
+                   JOptionPane.showMessageDialog(null, "Please choose another color.");
                    
                } 
+               
                       
 		// 6. put a loop around your code so that you keep asking the user for more colors & drawing them
               
@@ -57,13 +62,10 @@ public class TortoiseColorChooser {
                 Tortoise.turn(90);
                 Tortoise.move(200);
                 Tortoise.turn(90);
-             
-                
-                }
-                        
-               
-               
+                }      
 	}
         
+      
+       
         }
 

@@ -7,10 +7,13 @@ import javax.swing.JOptionPane;
  * your program should say "June's superpower is writing recipes".
  */
 public class XGeeks {
-public static void main(String[] args) {
-             
+public static void main(String[] args){ 
+
+          
         
-        for (int i = 0; i < 10; i++) { 
+    for (int i = 0; i < 10; i++) {
+        
+    
 	
 		// 1. Save the superpower for each person in a variable.
                 String Izuku = "Izuku's quirk is One For All";
@@ -22,14 +25,14 @@ public static void main(String[] args) {
            	// 2. Ask the user to enter a name. Store their answer in a variable.
                 String answer = JOptionPane.showInputDialog("What superhero do you want?" 
                 +"  "+ "Pick from the following:" +"  "+ "Izuku"+ " "+ "Shoto"
-                + " " + "Bakugo"+" "+ "Ochako"+ " "+ "Mina"); 
+                + " " + "Bakugo"+" "+ "Ochaco"+ " "+ "Mina"); 
             
 	
     // 3. Show the superpower in a pop-up, depending on the name entered.
     
     //6/1/17 Update: I changed the string to a case 
     
-        switch (answer) {
+     switch (answer) {
         default:
             JOptionPane.showMessageDialog(null,"Please pick another My Hero Academia character."
             + "  " + "Also please write the character's name in capitals (only first letter)." );
@@ -48,15 +51,16 @@ public static void main(String[] args) {
             break;
         case "Ochaco":
             ImageIcon a = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Ochaco Uraraka.png");
-           JOptionPane.showMessageDialog(null,Ochaco,"Ochako Uraraka", JOptionPane.PLAIN_MESSAGE,a);
+           JOptionPane.showMessageDialog(null,Ochaco,"Ochaco Uraraka", JOptionPane.PLAIN_MESSAGE,a);
             break;
         case "Mina":
            ImageIcon b = new ImageIcon("C:\\Users\\Selena Minez\\OneDrive\\GitHub\\Level-0-SM\\src\\CharacterPics\\Mina Ashido.png");
            JOptionPane.showMessageDialog(null,Mina,"Mina Ashido", JOptionPane.PLAIN_MESSAGE,b);
+           break;
         }
-            break;
-       
-             }			
+        
+    } 
+             		
 				
-        }
+       }
         } 
