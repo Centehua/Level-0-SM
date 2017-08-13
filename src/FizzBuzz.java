@@ -5,24 +5,18 @@ public class FizzBuzz {
 
 for (int i = 1; i <= 20; i++) {
 	
- if(i%3==0 && i%5==0){
+        if(i%3==0 && i%5==0){
 	 System.out.println("fizzbuzz");	
-	} else if( i%5==0){
+	}else  if( i%5==0){
 	 System.out.println("buzz");
 	}else if(i%3==0 ){
-	System.out.println("fizz");	
-	}else if(i%3==1 || i%3==2) {
-		 System.out.println(i);	
+	 System.out.println("fizz");	
+	}else if(!(i%3==0)|| !(i%5==0)){
+	 System.out.println(i);	
 	}
-	
-	
-	
-	
+	// * When using ! make sure the condition is in its own set of parentheses	
 }
-
-	 
-	 
-	 
+  
+    
 }
- 
-}
+} 
