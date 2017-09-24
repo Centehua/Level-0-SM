@@ -9,7 +9,7 @@ public class PrimeOrNot {
 	System.exit(0);
   }
   for (int i = 2; i < UserNum; i++) {
-	if(UserNum%2==0) {
+	if(UserNum%i==0) {
 	JOptionPane.showMessageDialog(null, "This isn't a prime number");	
 	System.exit(0);
 	}	
